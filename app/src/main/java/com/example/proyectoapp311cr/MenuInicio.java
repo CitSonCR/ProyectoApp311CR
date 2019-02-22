@@ -21,5 +21,14 @@ public class MenuInicio extends AppCompatActivity {
                 startActivityForResult(intent,0);
             }
         });
+
+        Button btnRegistrarse = (Button) findViewById(R.id.btnRegistrarse);
+        btnRegistrarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),RegistryActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });
     }
 }
